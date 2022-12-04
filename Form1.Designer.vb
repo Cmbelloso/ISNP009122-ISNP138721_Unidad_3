@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,32 +20,40 @@ Partial Class Form1
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.TxtCodigo = New System.Windows.Forms.TextBox()
         Me.BtnGenerar = New System.Windows.Forms.Button()
+        Me.TxtCodigo = New System.Windows.Forms.TextBox()
         Me.BtnAgregar = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.TxtNombre = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TxtDui = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.TxtDirección = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.TxtGenero = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.TxtApellido = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.TxtCorreo = New System.Windows.Forms.TextBox()
+        Me.datosAlumnos = New System.Windows.Forms.DataGridView()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TxtEdad = New System.Windows.Forms.TextBox()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.TxtCorreo = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.TxtApellido = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.TxtGenero = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.TxtDirección = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.TxtDui = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.TxtNombre = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.datosAlumnos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -59,6 +67,16 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Generar Codigo"
         '
+        'BtnGenerar
+        '
+        Me.BtnGenerar.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BtnGenerar.Location = New System.Drawing.Point(411, 51)
+        Me.BtnGenerar.Name = "BtnGenerar"
+        Me.BtnGenerar.Size = New System.Drawing.Size(317, 49)
+        Me.BtnGenerar.TabIndex = 1
+        Me.BtnGenerar.Text = "Generar Codigo"
+        Me.BtnGenerar.UseVisualStyleBackColor = False
+        '
         'TxtCodigo
         '
         Me.TxtCodigo.Location = New System.Drawing.Point(26, 62)
@@ -67,29 +85,19 @@ Partial Class Form1
         Me.TxtCodigo.Size = New System.Drawing.Size(273, 38)
         Me.TxtCodigo.TabIndex = 0
         '
-        'BtnGenerar
-        '
-        Me.BtnGenerar.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.BtnGenerar.Location = New System.Drawing.Point(411, 58)
-        Me.BtnGenerar.Name = "BtnGenerar"
-        Me.BtnGenerar.Size = New System.Drawing.Size(308, 42)
-        Me.BtnGenerar.TabIndex = 1
-        Me.BtnGenerar.Text = "Generar Codigo"
-        Me.BtnGenerar.UseVisualStyleBackColor = False
-        '
         'BtnAgregar
         '
         Me.BtnAgregar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.BtnAgregar.Location = New System.Drawing.Point(1046, 112)
+        Me.BtnAgregar.Location = New System.Drawing.Point(1045, 101)
         Me.BtnAgregar.Name = "BtnAgregar"
-        Me.BtnAgregar.Size = New System.Drawing.Size(308, 42)
+        Me.BtnAgregar.Size = New System.Drawing.Size(309, 53)
         Me.BtnAgregar.TabIndex = 2
         Me.BtnAgregar.Text = "Agregar Alumno"
         Me.BtnAgregar.UseVisualStyleBackColor = False
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.DataGridView1)
+        Me.GroupBox2.Controls.Add(Me.datosAlumnos)
         Me.GroupBox2.Controls.Add(Me.Label7)
         Me.GroupBox2.Controls.Add(Me.TxtEdad)
         Me.GroupBox2.Controls.Add(Me.Label6)
@@ -106,74 +114,53 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.TxtNombre)
         Me.GroupBox2.Location = New System.Drawing.Point(46, 235)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(1409, 637)
+        Me.GroupBox2.Size = New System.Drawing.Size(2058, 932)
         Me.GroupBox2.TabIndex = 3
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Datos de Alumno"
         '
-        'TxtNombre
+        'datosAlumnos
         '
-        Me.TxtNombre.Location = New System.Drawing.Point(226, 75)
-        Me.TxtNombre.Name = "TxtNombre"
-        Me.TxtNombre.Size = New System.Drawing.Size(267, 38)
-        Me.TxtNombre.TabIndex = 0
+        Me.datosAlumnos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.datosAlumnos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column8, Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6, Me.Column7})
+        Me.datosAlumnos.Location = New System.Drawing.Point(-34, 391)
+        Me.datosAlumnos.Name = "datosAlumnos"
+        Me.datosAlumnos.RowHeadersWidth = 102
+        Me.datosAlumnos.RowTemplate.Height = 40
+        Me.datosAlumnos.Size = New System.Drawing.Size(1355, 398)
+        Me.datosAlumnos.TabIndex = 14
         '
-        'Label1
+        'Label7
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(36, 78)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(114, 32)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Nombre"
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(875, 223)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(81, 32)
+        Me.Label7.TabIndex = 13
+        Me.Label7.Text = "Edad"
         '
-        'Label2
+        'TxtEdad
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(681, 78)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(61, 32)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "DUI"
+        Me.TxtEdad.Location = New System.Drawing.Point(1041, 221)
+        Me.TxtEdad.Name = "TxtEdad"
+        Me.TxtEdad.Size = New System.Drawing.Size(139, 38)
+        Me.TxtEdad.TabIndex = 12
         '
-        'TxtDui
+        'Label6
         '
-        Me.TxtDui.Location = New System.Drawing.Point(847, 78)
-        Me.TxtDui.Name = "TxtDui"
-        Me.TxtDui.Size = New System.Drawing.Size(267, 38)
-        Me.TxtDui.TabIndex = 2
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(875, 154)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(100, 32)
+        Me.Label6.TabIndex = 11
+        Me.Label6.Text = "Correo"
         '
-        'Label3
+        'TxtCorreo
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(36, 297)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(133, 32)
-        Me.Label3.TabIndex = 5
-        Me.Label3.Text = "Dirección"
-        '
-        'TxtDirección
-        '
-        Me.TxtDirección.Location = New System.Drawing.Point(227, 297)
-        Me.TxtDirección.Name = "TxtDirección"
-        Me.TxtDirección.Size = New System.Drawing.Size(641, 38)
-        Me.TxtDirección.TabIndex = 4
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(36, 227)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(109, 32)
-        Me.Label4.TabIndex = 7
-        Me.Label4.Text = "Genero"
-        '
-        'TxtGenero
-        '
-        Me.TxtGenero.Location = New System.Drawing.Point(227, 221)
-        Me.TxtGenero.Name = "TxtGenero"
-        Me.TxtGenero.Size = New System.Drawing.Size(133, 38)
-        Me.TxtGenero.TabIndex = 6
+        Me.TxtCorreo.Location = New System.Drawing.Point(1041, 149)
+        Me.TxtCorreo.Name = "TxtCorreo"
+        Me.TxtCorreo.Size = New System.Drawing.Size(267, 38)
+        Me.TxtCorreo.TabIndex = 10
         '
         'Label5
         '
@@ -191,47 +178,69 @@ Partial Class Form1
         Me.TxtApellido.Size = New System.Drawing.Size(267, 38)
         Me.TxtApellido.TabIndex = 8
         '
-        'Label6
+        'Label4
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(681, 154)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(100, 32)
-        Me.Label6.TabIndex = 11
-        Me.Label6.Text = "Correo"
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(36, 227)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(109, 32)
+        Me.Label4.TabIndex = 7
+        Me.Label4.Text = "Genero"
         '
-        'TxtCorreo
+        'TxtGenero
         '
-        Me.TxtCorreo.Location = New System.Drawing.Point(847, 149)
-        Me.TxtCorreo.Name = "TxtCorreo"
-        Me.TxtCorreo.Size = New System.Drawing.Size(267, 38)
-        Me.TxtCorreo.TabIndex = 10
+        Me.TxtGenero.Location = New System.Drawing.Point(227, 221)
+        Me.TxtGenero.Name = "TxtGenero"
+        Me.TxtGenero.Size = New System.Drawing.Size(133, 38)
+        Me.TxtGenero.TabIndex = 6
         '
-        'Label7
+        'Label3
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(681, 223)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(81, 32)
-        Me.Label7.TabIndex = 13
-        Me.Label7.Text = "Edad"
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(36, 297)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(133, 32)
+        Me.Label3.TabIndex = 5
+        Me.Label3.Text = "Dirección"
         '
-        'TxtEdad
+        'TxtDirección
         '
-        Me.TxtEdad.Location = New System.Drawing.Point(847, 221)
-        Me.TxtEdad.Name = "TxtEdad"
-        Me.TxtEdad.Size = New System.Drawing.Size(139, 38)
-        Me.TxtEdad.TabIndex = 12
+        Me.TxtDirección.Location = New System.Drawing.Point(227, 297)
+        Me.TxtDirección.Name = "TxtDirección"
+        Me.TxtDirección.Size = New System.Drawing.Size(1037, 38)
+        Me.TxtDirección.TabIndex = 4
         '
-        'DataGridView1
+        'Label2
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(42, 375)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 102
-        Me.DataGridView1.RowTemplate.Height = 40
-        Me.DataGridView1.Size = New System.Drawing.Size(1308, 261)
-        Me.DataGridView1.TabIndex = 14
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(875, 78)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(61, 32)
+        Me.Label2.TabIndex = 3
+        Me.Label2.Text = "DUI"
+        '
+        'TxtDui
+        '
+        Me.TxtDui.Location = New System.Drawing.Point(1041, 78)
+        Me.TxtDui.Name = "TxtDui"
+        Me.TxtDui.Size = New System.Drawing.Size(267, 38)
+        Me.TxtDui.TabIndex = 2
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(36, 78)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(114, 32)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "Nombre"
+        '
+        'TxtNombre
+        '
+        Me.TxtNombre.Location = New System.Drawing.Point(226, 75)
+        Me.TxtNombre.Name = "TxtNombre"
+        Me.TxtNombre.Size = New System.Drawing.Size(267, 38)
+        Me.TxtNombre.TabIndex = 0
         '
         'TextBox1
         '
@@ -244,12 +253,68 @@ Partial Class Form1
         Me.TextBox1.TabIndex = 4
         Me.TextBox1.Text = " INGRESO DE DATOS ESTUDIANTES"
         '
+        'Column8
+        '
+        Me.Column8.HeaderText = "Codigo"
+        Me.Column8.MinimumWidth = 12
+        Me.Column8.Name = "Column8"
+        Me.Column8.Width = 250
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "Nombre"
+        Me.Column1.MinimumWidth = 12
+        Me.Column1.Name = "Column1"
+        Me.Column1.Width = 250
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "Apellido"
+        Me.Column2.MinimumWidth = 12
+        Me.Column2.Name = "Column2"
+        Me.Column2.Width = 250
+        '
+        'Column3
+        '
+        Me.Column3.HeaderText = "Genero"
+        Me.Column3.MinimumWidth = 12
+        Me.Column3.Name = "Column3"
+        Me.Column3.Width = 250
+        '
+        'Column4
+        '
+        Me.Column4.HeaderText = "Dirección"
+        Me.Column4.MinimumWidth = 12
+        Me.Column4.Name = "Column4"
+        Me.Column4.Width = 250
+        '
+        'Column5
+        '
+        Me.Column5.HeaderText = "DUI"
+        Me.Column5.MinimumWidth = 12
+        Me.Column5.Name = "Column5"
+        Me.Column5.Width = 250
+        '
+        'Column6
+        '
+        Me.Column6.HeaderText = "Correo"
+        Me.Column6.MinimumWidth = 12
+        Me.Column6.Name = "Column6"
+        Me.Column6.Width = 250
+        '
+        'Column7
+        '
+        Me.Column7.HeaderText = "Edad"
+        Me.Column7.MinimumWidth = 12
+        Me.Column7.Name = "Column7"
+        Me.Column7.Width = 250
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(16.0!, 31.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.InactiveCaption
-        Me.ClientSize = New System.Drawing.Size(1467, 884)
+        Me.ClientSize = New System.Drawing.Size(1446, 1096)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.BtnAgregar)
@@ -260,7 +325,7 @@ Partial Class Form1
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.datosAlumnos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -271,7 +336,7 @@ Partial Class Form1
     Friend WithEvents TxtCodigo As TextBox
     Friend WithEvents BtnAgregar As Button
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents datosAlumnos As DataGridView
     Friend WithEvents Label7 As Label
     Friend WithEvents TxtEdad As TextBox
     Friend WithEvents Label6 As Label
@@ -287,4 +352,12 @@ Partial Class Form1
     Friend WithEvents Label1 As Label
     Friend WithEvents TxtNombre As TextBox
     Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Column8 As DataGridViewTextBoxColumn
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents Column6 As DataGridViewTextBoxColumn
+    Friend WithEvents Column7 As DataGridViewTextBoxColumn
 End Class
